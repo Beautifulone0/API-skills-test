@@ -295,4 +295,6 @@ body{
 }
 .a-text{
  background-color: #707070;
+ border-radius: 5px;
+ padding: 5px;
 }
