@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors: */
+  --unnamed-color-705aaa: #705aaa;
+  --unnamed-color-cbc8d4: #cbc8d4;
+  --activestate_bg_2: #d8fcf7;
+  --activestate_bg_1: #01f0d0;
+  --unnamed-color-0bd984: #0bd984;
+  --unnamed-color-072635: #072635;
+  --unnamed-color-0c3d5d: #0c3d5d;
+  --unnamed-color-084c77: #084c77;
+  --unnamed-color-055a92: #055a92;
+  --unnamed-color-006aac: #006aac;
+  --unnamed-color-007bc7: #007bc7;
+  --unnamed-color-707070: #707070;
+  --unnamed-color-f6f6f6: #f6f6f6;
+  --unnamed-color-ededed: #ededed;
+  --unnamed-color-000000: #000000;
+  --unnamed-color-878787: #878787;
+  --navbar-color: #ffffff;
+  --unnamed-color-ff6200: #ff6200;
+  --body-color: #F6F7F8;
+
+  /* Font/text values */
+  --unnamed-font-family-manrope: "Manrope", serif;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-800: 800px;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-18: 18px;
+  --unnamed-font-size-24: 24px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-24: 24px;
+  --unnamed-line-spacing-33: 33px;
+  --unnamed-text-transform-titlecase: titlecase;
+}
+body{
+    background-color: var(--body-color);
+}
+.navbar{
+    background-color: var(--navbar-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 15px;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+.navlogo img{
+    width: 50%;
+    height: 50%;
+}
+.navlinks ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    font-family: var(--unnamed-font-family-manrope);
+    font-size: small;
+}
+.navlinks ul li img{
+    width: 15px;
+    height: 15px;
+}
+.navprofile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile img{
+    width: 30px;
+    height: 30px;
+}
+.navprofile h6{
+    font-family: var(--unnamed-font-family-manrope);
+    font-size: var(--unnamed-font-size-14);
+}
+.navprofile p{
+    font-family: var(--unnamed-font-family-manrope);
+    font-size: 10px;
+    color: var(--unnamed-color-707070);
+}
+.dashboard{
+    margin: 15px;
+    /* border: 2px solid black; */
+    padding: 0;
+}
+.dashboard-section{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.patients{
+    background-color: var(--navbar-color);
+    width: 25%;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+.p-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--unnamed-font-family-manrope);
+}
+.patients-l{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    font-family: "Manrope", serif;
+}
+.patients-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.patients-info img{
+    width: 100%;
+    height: 100%;
+}
+.patients-info h6{
+    font-size: var(--unnamed-font-size-14);
+}
+.patients-info p{
+    font-size: 10px;
+    color: var(--unnamed-color-707070);
+}
+.diagnosishistory{
+    background-color: var(--navbar-color);
+    width: 45%;
+    height: 650px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.diagnosishistory h1{
+    font-family: "Manrope", serif;
+    font-size: var(--unnamed-font-size-24);
+    color: var(--unnamed-color-072635);
+}
+.graph{
+    width: 100%;
+    height: 300px;
+    background-color: #F4F0FE;
+    margin: 20px 5px;
+    border-radius: 5px;
+}
+.diagnosis{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 10px;
+    font-family: "manrope", serif;
+}
+.d-1{
+    background-color: #E0F3FA;
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 2;
+}
+.d-1 img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.d-2{
+    background-color: #FFE6E9;
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 2;
+}
+.d-2 img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.dl-container{
+    width: 103%;
+    height: 210px;
+    margin-top: 70px;
+    margin-left: 0;
+    padding: 15px;
+    background-color: var(--navbar-color);
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    overflow: scroll;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+}
+.list-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: #F6F7F8;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: "manrope", serif;
+    color: #072635;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 1px solid var(--body-color);
+    line-height: 2;
+    font-family: "Manrope", serif;
+    color: #072635;
+}
+.patientprofile{
+    background-color: white;
+    width: 20%;
+    height: 600px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.jessi-img img{
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: 15px auto;
+}
+.jessi-img h2{
+    text-align: center;
+    font-family: var(--unnamed-font-family-manrope);
+}
+.p-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--unnamed-font-family-manrope);
+    font-size: medium;
+    margin: 30px 10px;
+}
+.p-info img{
+    width: 25px;
+    height: 25px;
+}
+.btn button {
+    background-color: #01f0d0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    margin: 90px auto;
+    font-family: var(--unnamed-font-family-manrope);
+}
+.lab-test{
+    background-color: white;
+    width: 105%;
+    height: 270px;
+    margin: 10px 5px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+.lab-heading{
+    font-family: var(--unnamed-font-family-manrope);
+    font-size: large;
+    font-weight: 500;
+    margin: 10px;
+}
+.l-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--unnamed-font-family-manrope);
+    font-size: medium;
+    margin: 10px 0;
+    border-bottom: 1px solid var(--body-color);
+    line-height: 2.5;
+    color: #072635;
+}
+.l-flex img{
+    width: 15px;
+    height: 15px;
+}
+.a-text{
+ background-color: #707070;
+}
